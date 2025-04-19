@@ -4,20 +4,20 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1745075509|637123815';
+const CACHE_VERSION = '1745077652|2780681347';
 /** @type {string} */
 const CACHE_PREFIX = 'EnglishNarcissus-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
-const OFFLINE_URL = 'ENGPROJ2.offline.html';
+const OFFLINE_URL = 'index.offline.html';
 /** @type {boolean} */
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["ENGPROJ2.html","ENGPROJ2.js","ENGPROJ2.offline.html","ENGPROJ2.icon.png","ENGPROJ2.apple-touch-icon.png","ENGPROJ2.audio.worklet.js","ENGPROJ2.audio.position.worklet.js"];
+const CACHED_FILES = ["index.html","index.js","index.offline.html","index.icon.png","index.apple-touch-icon.png","index.audio.worklet.js","index.audio.position.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHEABLE_FILES = ["ENGPROJ2.wasm","ENGPROJ2.pck","ENGPROJ2.side.wasm"];
+const CACHEABLE_FILES = ["index.wasm","index.pck","index.side.wasm"];
 const FULL_CACHE = CACHED_FILES.concat(CACHEABLE_FILES);
 
 self.addEventListener('install', (event) => {
